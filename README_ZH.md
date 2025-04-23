@@ -4,6 +4,8 @@
   <img src="res/logo.jpg" style="width: 100%; height: auto;"/>
 </div>
 
+## 在线体验：
+ 😄 DUIX数字人实时交互平台：https://duix.com/
 
  ## 📖 文档 Documentation <br>
  😄 [实时交互SDK：[Android]](./duix-android/dh_aigc_android/README.md)<br>
