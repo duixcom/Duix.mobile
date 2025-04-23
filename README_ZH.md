@@ -5,7 +5,7 @@
 </div>
 
 ## 在线体验：<br> 
- 😄 DUIX数字人实时交互平台：https://duix.com(https://duix.com/)<br>
+ 😄 [DUIX数字人实时交互平台：https://duix.com](https://duix.com/)<br>
 
  ## 📖 文档 Documentation <br>
  😄 [实时交互SDK：[Android]](./duix-android/dh_aigc_android/README.md)<br>
