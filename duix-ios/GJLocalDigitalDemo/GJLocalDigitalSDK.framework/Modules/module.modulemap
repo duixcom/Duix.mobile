@@ -1,6 +1,0 @@
-framework module GJLocalDigitalSDK {
-  umbrella header "GJLocalDigitalSDK.h"
-  export *
-
-  module * { export * }
-}

@@ -19,11 +19,11 @@
 		A04821F12B2C5650005E06BD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04821E92B2C5429005E06BD /* Security.framework */; };
 		A04821F42B2C5695005E06BD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A04821EF2B2C5608005E06BD /* libz.tbd */; };
 		A04822222B2C5FF6005E06BD /* GJCheckNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = A04822212B2C5FF6005E06BD /* GJCheckNetwork.m */; };
+		A06A8E6F2DB9CEF600AA3F07 /* GJLocalDigitalSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0FBC80C2BF5B34600C77AFB /* GJLocalDigitalSDK.framework */; };
+		A06A8E702DB9CEF600AA3F07 /* GJLocalDigitalSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0FBC80C2BF5B34600C77AFB /* GJLocalDigitalSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A0B1C4362B29C1F2009E0716 /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = A0B1C4352B29C1F2009E0716 /* 1.wav */; };
 		A0BB09402B3C34A700BF0CC1 /* GJLDigitalAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BB093F2B3C34A700BF0CC1 /* GJLDigitalAnswerModel.m */; };
 		A0BB09432B3C34B800BF0CC1 /* GJDownWavTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BB09422B3C34B800BF0CC1 /* GJDownWavTool.m */; };
-		A0C2DFFF2BF6456200539EAF /* GJLocalDigitalSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C2DFFD2BF6455100539EAF /* GJLocalDigitalSDK.framework */; };
-		A0C2E0002BF6456300539EAF /* GJLocalDigitalSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A0C2DFFD2BF6455100539EAF /* GJLocalDigitalSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A0D3B8A52B3D740500983153 /* GYAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D3B8A42B3D740500983153 /* GYAccess.m */; };
 		A0D81D9B2B299568002F98C1 /* bg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0D81D9A2B299568002F98C1 /* bg2.jpg */; };
 		A0F908C32B32E97500962346 /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A0F908C02B32E97500962346 /* 2.wav */; };
@@ -53,7 +53,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A0C2E0002BF6456300539EAF /* GJLocalDigitalSDK.framework in Embed Frameworks */,
+				A06A8E702DB9CEF600AA3F07 /* GJLocalDigitalSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +88,6 @@
 		A0BB093F2B3C34A700BF0CC1 /* GJLDigitalAnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJLDigitalAnswerModel.m; sourceTree = "<group>"; };
 		A0BB09412B3C34B800BF0CC1 /* GJDownWavTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJDownWavTool.h; sourceTree = "<group>"; };
 		A0BB09422B3C34B800BF0CC1 /* GJDownWavTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJDownWavTool.m; sourceTree = "<group>"; };
-		A0C2DFFD2BF6455100539EAF /* GJLocalDigitalSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GJLocalDigitalSDK.framework; sourceTree = "<group>"; };
 		A0D3B8A32B3D740500983153 /* GYAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GYAccess.h; sourceTree = "<group>"; };
 		A0D3B8A42B3D740500983153 /* GYAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GYAccess.m; sourceTree = "<group>"; };
 		A0D81D7F2B29915D002F98C1 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
@@ -120,7 +119,7 @@
 				A04821F42B2C5695005E06BD /* libz.tbd in Frameworks */,
 				A04821F12B2C5650005E06BD /* Security.framework in Frameworks */,
 				7FA77A706ADB2579D0F321CD /* Pods_GJLocalDigitalDemo.framework in Frameworks */,
-				A0C2DFFF2BF6456200539EAF /* GJLocalDigitalSDK.framework in Frameworks */,
+				A06A8E6F2DB9CEF600AA3F07 /* GJLocalDigitalSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +253,6 @@
 		A0FC3EAC2B2855AC0069EA0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0C2DFFD2BF6455100539EAF /* GJLocalDigitalSDK.framework */,
 				A037D5F02B3D0B1800E1AF98 /* AVFoundation.framework */,
 				A04821F22B2C567E005E06BD /* libz.1.2.8.tbd */,
 				A04821EF2B2C5608005E06BD /* libz.tbd */,
