@@ -391,7 +391,8 @@
 //播放音频
 -(void)toRecord
 {
-
+//    [[GJLDigitalManager manager] toRandomMotion];
+//    [[GJLDigitalManager manager] toStartMotion];
      NSString * filepath=[[NSBundle mainBundle] pathForResource:@"3.wav" ofType:nil];
      [[GJLDigitalManager manager] toSpeakWithPath:filepath];
 

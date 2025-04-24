@@ -69,12 +69,14 @@ typedef NS_ENUM(NSInteger, JPMetalViewContentMode) {
         {
             self.mtkView.backgroundColor=[UIColor clearColor];
         }
-    
+        self.mtkView.clearColor = MTLClearColorMake(0.0, 0.0, 0.0, 0);
+        self.mtkView.sampleCount = 1;
+        self.mtkView.framebufferOnly = NO;
   
         [self addSubview:self.mtkView];
         self.mtkView.delegate = self;
         self.viewportSize = (vector_uint2){static_cast<unsigned int>(self.mtkView.drawableSize.width), static_cast<unsigned int>(self.mtkView.drawableSize.height)};
-        NSLog(@"mtkView=drawableSize==%f,%f",  self.mtkView.drawableSize.width,self.mtkView.drawableSize.width);
+        NSLog(@"mtkView=drawableSize==%f,%f",  self.mtkView.drawableSize.width,self.mtkView.drawableSize.height);
         //         CVMetalTextureCacheCreate(NULL, NULL, self.mtkView.device, NULL, &_textureCache);
         [self customInit];
     }
@@ -115,7 +117,7 @@ typedef NS_ENUM(NSInteger, JPMetalViewContentMode) {
     pipelineStateDescriptor.vertexFunction = vertexFunction;
     pipelineStateDescriptor.fragmentFunction = fragmentFunction;
     pipelineStateDescriptor.colorAttachments[0].pixelFormat = self.mtkView.colorPixelFormat;
-    pipelineStateDescriptor.colorAttachments[0].blendingEnabled = true;
+    pipelineStateDescriptor.colorAttachments[0].blendingEnabled = NO;
     pipelineStateDescriptor.colorAttachments[0].rgbBlendOperation = MTLBlendOperationAdd;
     pipelineStateDescriptor.colorAttachments[0].alphaBlendOperation         = MTLBlendOperationAdd;
     pipelineStateDescriptor.colorAttachments[0].sourceRGBBlendFactor = MTLBlendFactorSourceAlpha;
@@ -212,11 +214,14 @@ typedef NS_ENUM(NSInteger, JPMetalViewContentMode) {
     {
         return;
     }
+    @autoreleasepool
+    {
     id<MTLCommandBuffer> commandBuffer = [self.commandQueue commandBuffer];
     MTLRenderPassDescriptor *renderPassDescriptor = view.currentRenderPassDescriptor;
     // MTLRenderPassDescriptor描述一系列attachments的值，类似GL的FrameBuffer；同时也用来创建MTLRenderCommandEncoder
     if(renderPassDescriptor != nil)
     {
+        renderPassDescriptor.colorAttachments[0].loadAction = MTLLoadActionClear;
         renderPassDescriptor.colorAttachments[0].clearColor = MTLClearColorMake(0.0, 0, 0, 0.0f); // 设置默认颜色
         id<MTLRenderCommandEncoder> renderEncoder = [commandBuffer renderCommandEncoderWithDescriptor:renderPassDescriptor]; //编码绘制指令的Encoder
         [renderEncoder setViewport:(MTLViewport){0.0, 0.0, static_cast<double>(self.viewportSize.x), static_cast<double>(self.viewportSize.y), -1.0, 1.0 }]; // 设置显示区域
@@ -255,6 +260,8 @@ typedef NS_ENUM(NSInteger, JPMetalViewContentMode) {
     }
     
     [commandBuffer commit]; // 提交；
+        
+    }
 }
 -(cv::Mat)cvMatFromUIImage:(UIImage *)image
 {
