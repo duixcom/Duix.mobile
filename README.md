@@ -80,14 +80,11 @@ Our models support diverse applications across web, mobile, Android smart displa
 
 ### Business case presentation
 ### Mobile Phone and General Terminal Screen Cases
-| <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/540p/lvshi/lvshi-bg.jpg" width="200"> | <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/540p/yisheng/yisheng-bg.jpg" width="200"> | <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/540p/peiban/peiban-bg.jpg" width="200"> | <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/540p/laoshi/laoshi-bg.jpg" width="200"> |
+| <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/anli/Ai_doctors.jpg" width="200"> | <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/anli/Digital_bestie.jpg" width="200"> | <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/anli/Digital_Customer_Service.jpg" width="200"> | <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/anli/Digital_Lawyer.jpg" width="200"> |
 |:-------:|:-------:|:-------:|:-------:|
-| **Digital Lawyer <br>[Download](https://github.com/GuijiAI/duix.ai/blob/main/res/540p/lvshi/lvshi.mp4)** | **Digital Doctor<br> [Download](https://github.com/GuijiAI/duix.ai/blob/main/res/540p/yisheng/yisheng.mp4)** | **Virtual Companion<br> [Download](https://github.com/GuijiAI/duix.ai/blob/main/res/540p/peiban/peiban.mp4)** | ** Speaking Tutor<br> [Download](https://github.com/GuijiAI/duix.ai/blob/main/res/540p/laoshi/laoshi.mp4)** |
+| **Ai doctors<br>[Download](https://github.com/GuijiAI/duix.ai/blob/main/res/anli/Ai_doctors.mp4)** | **Digital bestie<br> [Download](https://github.com/GuijiAI/duix.ai/blob/main/res/anli/Digital_bestie.mp4)** | **Digital Customer Service<br> [Download](https://github.com/GuijiAI/duix.ai/blob/main/res/anli/Digital_Customer_Service.mp4)** | **Digital_Lawyer<br> [Download](https://github.com/GuijiAI/duix.ai/blob/main/res/anli/Digital_Lawyer.mp4)** |
 
-### Low-end Terminal Screen Cases
-| <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/270p/caishen/caishen-bg.jpg" width="200"> | <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/270p/guanyin/guanyin-bg.jpg" width="200"> | <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/270p/sushi/sushi-bg.jpg" width="200"> | <img src="https://github.com/GuijiAI/duix.ai/blob/main/res/270p/nvyou/nvyou-bg.jpg" width="200"> |
-|:-------:|:-------:|:-------:|:-------:|
-| **God of Wealth <br>[Download](https://github.com/GuijiAI/duix.ai/blob/main/res/270p/caishen/caishen.mp4)** | **Guanyin Bodhisattva<br> [Download](https://github.com/GuijiAI/duix.ai/blob/main/res/270p/guanyin/guanyin.mp4)** | **Su Shi<br> [Download](https://github.com/GuijiAI/duix.ai/blob/main/res/270p/sushi/sushi.mp4)** | **Virtual Girlfriend <br>[Download](https://github.com/GuijiAI/duix.ai/blob/main/res/270p/nvyou/nvyou.mp4)** |
+
    
 ## <a id="faq"></a>6. FAQ
 
