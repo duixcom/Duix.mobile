@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="80dp"
         android:gravity="center"
         android:text="@string/app_name"
         android:textColor="@color/black"
@@ -64,35 +64,61 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvBaseConfig"
                 />
 
+            <!-- 形象选择区域 -->
+            <TextView
+                android:id="@+id/tvAvatarLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="数字人形象"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etBaseConfig" />
+
+            <TextView
+                android:id="@+id/tvSelectedAvatar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="10dp"
+                android:background="#F0F0F0"
+                android:textSize="13sp"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAvatarLabel" />
+
+            <Button
+                android:id="@+id/btnMoreModel"
+                android:text="选择形象"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                app:layout_constraintTop_toBottomOf="@+id/tvSelectedAvatar"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <!-- Model URL (高级选项，可手动输入) -->
             <TextView
                 android:id="@+id/tvModelUrl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="20dp"
                 android:text="@string/model_url"
                 android:textSize="13sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/etBaseConfig"  />
-
-            <Button
-                android:id="@+id/btnMoreModel"
-                android:text="@string/more"
-                android:layout_marginTop="12dp"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                app:layout_constraintTop_toBottomOf="@+id/tvModelUrl"
-                app:layout_constraintEnd_toEndOf="parent"
-                />
+                app:layout_constraintTop_toBottomOf="@+id/btnMoreModel" />
 
             <EditText
                 android:id="@+id/etUrl"
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:text="https://github.com/duixcom/Duix-Mobile/releases/download/v1.0.0/bendi3_20240518.zip"
+                android:layout_marginTop="8dp"
                 android:textSize="13sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/btnMoreModel"
-                app:layout_constraintEnd_toStartOf="@+id/btnMoreModel"
+                app:layout_constraintTop_toBottomOf="@+id/tvModelUrl"
                 />
 
             <Button
