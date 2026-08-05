@@ -3,6 +3,7 @@ English | [中文](/README_zh.md)
 # 🚀🚀🚀 Duix Mobile — The Best Real-time Interactive AI Avatar Solution for Mobile Devices
 
 🔗 **Official website**：[www.duix.com](http://www.duix.com)
+🔗 **Official website**：[Duix Skills](https://github.com/duixcom/duix-skills)
 
 **📱 Cross-platform support: iOS / Android / Tablet / Automotive / VR / IoT / Large Screen Interaction, etc.**
 
