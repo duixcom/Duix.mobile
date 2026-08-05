@@ -2,7 +2,7 @@
 
 # 🚀🚀🚀 Duix Mobile — 移动端最佳实时交互式 AI 数字人解决方案
 
-🔗 **官方网站**：[www.duix.com](http://www.duix.com)
+🔗 **官方网站**：[www.duix.com](http://www.duix.com)  
 🔗 **Duix Skills package**：[Duix Skills](https://github.com/duixcom/duix-skills)
 
 **📱 跨平台支持：iOS / Android / 平板 / 车机 / VR / IoT / 大屏交互等**
