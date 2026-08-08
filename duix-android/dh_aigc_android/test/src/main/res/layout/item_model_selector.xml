@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="6dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_margin="4dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/shape_common_btn">
 
-    <TextView
-        android:id="@+id/tvModelUrl"
-        app:layout_constraintTop_toTopOf="parent"
-        android:textSize="13sp"
-        android:padding="6dp"
-        android:background="@drawable/shape_common_btn"
-        android:textColor="@color/white"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/tvModelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvModelDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="11sp"
+            android:textColor="#CCCCCC" />
+
+    </LinearLayout>
+
+</LinearLayout>
